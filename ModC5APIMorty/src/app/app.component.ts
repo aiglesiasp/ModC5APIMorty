@@ -9,19 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ModC5APIMorty';
 
-  articulos: any = null;
-
-  constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get("http://scratchya.com.ar/vue/datos.php")
-    .subscribe(
-      result => {
-        this.articulos = result;
-      },
-      error => {
-        console.log('problemas');
-      }
-    );
+    this.http.get("http://")
   }
 }

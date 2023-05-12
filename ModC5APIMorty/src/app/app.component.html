@@ -1,29 +1,17 @@
-
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<app-navbar></app-navbar>
 
 <router-outlet></router-outlet>
 
-<div *ngIf="articulos!=null; else espera">
-  <table border="1">
-    <tr>
-      <td>Codigo</td>
-      <td>Descripcion</td>
-      <td>Precio</td>
-    </tr>
-    <tr *ngFor="let art of articulos">
-      <td>{{art.codigo}}</td>
-      <td>{{art.descripcion}}</td>
-      <td>{{art.precio}}</td>
-    </tr>
-  </table>
-  <p>{{articulos[1].descripcion}}</p>
 
 
-</div>
-<ng-template #espera>Esperando datos...</ng-template>
+
